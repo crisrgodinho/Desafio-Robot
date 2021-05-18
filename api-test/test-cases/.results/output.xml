@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.0.1 (Python 3.8.9 on linux)" generated="20210506 20:47:01.405" rpa="false" schemaversion="2">
+<suite id="s1" name="Tests-api" source="/home/cristinacg/PycharmProjects/Desafio/api-test/test-cases/Tests-api.robot">
+<kw name="Connect api" library="http" type="SETUP">
+<kw name="Create Session" library="RequestsLibrary">
+<arg>api</arg>
+<arg>${URL-API}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<msg timestamp="20210506 20:47:01.472" level="INFO">Creating Session using : alias=api, url=http://dummy.restapiexample.com/api/v1, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" starttime="20210506 20:47:01.472" endtime="20210506 20:47:01.473"/>
+</kw>
+<status status="PASS" starttime="20210506 20:47:01.472" endtime="20210506 20:47:01.473"/>
+</kw>
+<test id="s1-t1" name="Register User">
+<kw name="Register user" library="http">
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${Headers}</var>
+<arg>content-type=application/json</arg>
+<arg>User-Agent=Postman</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20210506 20:47:01.474" level="INFO">${Headers} = {'content-type': 'application/json', 'User-Agent': 'Postman'}</msg>
+<status status="PASS" starttime="20210506 20:47:01.473" endtime="20210506 20:47:01.474"/>
+</kw>
+<kw name="Post On Session" library="RequestsLibrary">
+<var>${Answer}</var>
+<arg>api</arg>
+<arg>/create</arg>
+<arg>data={"name":"test2","salary":"1234","age":"23"}</arg>
+<arg>headers=${Headers}</arg>
+<doc>Sends a POST request on a previously created HTTP Session.</doc>
+<msg timestamp="20210506 20:47:03.110" level="INFO">POST Request : url=http://dummy.restapiexample.com/api/v1/create 
+ path_url=/api/v1/create 
+ headers={'User-Agent': 'Postman', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'content-type': 'application/json', 'Content-Length': '43'} 
+ body={"name":"test2","salary":"1234","age":"23"} 
+ </msg>
+<msg timestamp="20210506 20:47:03.110" level="INFO">POST Response : url=http://dummy.restapiexample.com/api/v1/create 
+ status=429, reason=Too Many Requests 
+ headers={'Date': 'Thu, 06 May 2021 23:47:03 GMT', 'Content-Type': 'text/html; charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Set-Cookie': '__cfduid=d615f94cb96117b72904eb749bfd4ae821620344822; expires=Sat, 05-Jun-21 23:47:02 GMT; path=/; domain=.restapiexample.com; HttpOnly; SameSite=Lax', 'Display': 'staticcontent_sol', 'Expires': 'Wed, 05 May 2021 23:47:03 GMT', 'Host-Header': 'c2hhcmVkLmJsdWVob3N0LmNvbQ==', 'Pagespeed': 'off', 'Referrer-Policy': '', 'Response': '429', 'Retry-After': '29', 'Vary': 'Accept-Encoding, Accept-Encoding,Origin', 'X-Ezoic-Cdn': 'Miss', 'X-Middleton-Display': 'staticcontent_sol', 'X-Middleton-Response': '429', 'X-Ratelimit-Limit': '60', 'X-Ratelimit-Remaining': '57', 'X-Ratelimit-Reset': '1620344852', 'X-Sol': 'pub_site', 'CF-Cache-Status': 'DYNAMIC', 'cf-request-id': '09e5acf420000051e094a3d000000001', 'Report-To': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report?s=z9Do4ZqZd3V1uOAqLkhexgmwnxx6GTx1PaKEUf1GNc7e83DO75esgKnVIoFSktn%2FqUrEaeFc0B3vGCZH9MY9DHXh8zcxmK%2B80kWG4sPG3Uu0qOLdaOmgcCEKggOBCQPlAOM12QQ%3D"}],"group":"cf-nel","max_age":604800}', 'NEL': '{"max_age":604800,"report_to":"cf-nel"}', 'Server': 'cloudflare', 'CF-RAY': '64b617669b0951e0-GRU', 'alt-svc': 'h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400'} 
+ body=&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+    &lt;head&gt;
+        &lt;meta charset="utf-8"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+
+        &lt;title&gt;Too Many Requests&lt;/title&gt;
+
+        &lt;!-- Fonts --&gt;
+        &lt;link rel="dns-prefetch" href="//fonts.gstatic.com"&gt;
+        &lt;link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet"&gt;
+
+        &lt;!-- Styles --&gt;
+        &lt;style&gt;
+            html, body {
+                background-color: #fff;
+                color: #636b6f;
+                font-family: 'Nunito', sans-serif;
+                font-weight: 100;
+                height: 100vh;
+                margin: 0;
+            }
+
+            .full-height {
+                height: 100vh;
+            }
+
+            .flex-center {
+                align-items: center;
+                display: flex;
+                justify-content: center;
+            }
+
+            .position-ref {
+                position: relative;
+            }
+
+            .code {
+                border-right: 2px solid;
+                font-size: 26px;
+                padding: 0 15px 0 15px;
+                text-align: center;
+            }
+
+            .message {
+                font-size: 18px;
+                text-align: center;
+            }
+        &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;div class="flex-center position-ref full-height"&gt;
+            &lt;div class="code"&gt;
+                429            &lt;/div&gt;
+
+            &lt;div class="message" style="padding: 10px;"&gt;
+                Too Many Requests            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+ 
+ </msg>
+<msg timestamp="20210506 20:47:03.113" level="FAIL">HTTPError: 429 Client Error: Too Many Requests for url: http://dummy.restapiexample.com/api/v1/create</msg>
+<status status="FAIL" starttime="20210506 20:47:01.474" endtime="20210506 20:47:03.113"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${Answer.text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20210506 20:47:03.114" endtime="20210506 20:47:03.114"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${Answer.json()}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20210506 20:47:03.115" endtime="20210506 20:47:03.115"/>
+</kw>
+<kw name="Set Test Variable" library="BuiltIn">
+<arg>${Answer}</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<status status="NOT RUN" starttime="20210506 20:47:03.115" endtime="20210506 20:47:03.115"/>
+</kw>
+<status status="FAIL" starttime="20210506 20:47:01.473" endtime="20210506 20:47:03.116"/>
+</kw>
+<kw name="Check the Status Code" library="http">
+<arg>200</arg>
+<status status="NOT RUN" starttime="20210506 20:47:03.117" endtime="20210506 20:47:03.117"/>
+</kw>
+<kw name="Check The User registered" library="http">
+<status status="NOT RUN" starttime="20210506 20:47:03.118" endtime="20210506 20:47:03.118"/>
+</kw>
+<status status="FAIL" starttime="20210506 20:47:01.473" endtime="20210506 20:47:03.119">HTTPError: 429 Client Error: Too Many Requests for url: http://dummy.restapiexample.com/api/v1/create</status>
+</test>
+<status status="FAIL" starttime="20210506 20:47:01.406" endtime="20210506 20:47:03.121"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Tests-api">Tests-api</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

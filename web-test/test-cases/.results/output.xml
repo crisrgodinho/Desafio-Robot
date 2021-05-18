@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.0.1 (Python 3.8.9 on linux)" generated="20210506 22:12:05.750" rpa="false" schemaversion="2">
+<suite id="s1" name="Product" source="/home/cristinacg/PycharmProjects/Desafio/web-test/test-cases/product.robot">
+<test id="s1-t1" name="Scenario: Valid Login">
+<kw name="Given I'm access to browser to login page" library="commom.resource">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://www.saucedemo.com/</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20210506 22:12:05.861" level="INFO">Opening url 'https://www.saucedemo.com/'</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210506 22:12:05.862" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20210506 22:12:05.862" endtime="20210506 22:12:05.862"/>
+</kw>
+<msg timestamp="20210506 22:12:05.862" level="FAIL">No browser is open.</msg>
+<msg timestamp="20210506 22:12:05.862" level="DEBUG">Traceback (most recent call last):
+  File "/home/cristinacg/.local/lib/python3.8/site-packages/SeleniumLibrary/__init__.py", line 492, in run_keyword
+    return DynamicCore.run_keyword(self, name, args, kwargs)
+  File "/home/cristinacg/.local/lib/python3.8/site-packages/robotlibcore.py", line 103, in run_keyword
+    return self.keywords[name](*args, **(kwargs or {}))
+  File "/home/cristinacg/.local/lib/python3.8/site-packages/SeleniumLibrary/keywords/browsermanagement.py", line 592, in go_to
+    self.driver.get(url)
+  File "/home/cristinacg/.local/lib/python3.8/site-packages/SeleniumLibrary/base/context.py", line 34, in driver
+    return self.ctx.driver
+  File "/home/cristinacg/.local/lib/python3.8/site-packages/SeleniumLibrary/__init__.py", line 563, in driver
+    raise NoOpenBrowser("No browser is open.")</msg>
+<status status="FAIL" starttime="20210506 22:12:05.861" endtime="20210506 22:12:05.863"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>Swag Labs</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="NOT RUN" starttime="20210506 22:12:05.863" endtime="20210506 22:12:05.863"/>
+</kw>
+<status status="FAIL" starttime="20210506 22:12:05.861" endtime="20210506 22:12:05.863"/>
+</kw>
+<kw name="When I Input Username">
+<arg>user</arg>
+<status status="NOT RUN" starttime="20210506 22:12:05.866" endtime="20210506 22:12:05.866"/>
+</kw>
+<kw name="And I Input Password">
+<arg>password</arg>
+<status status="NOT RUN" starttime="20210506 22:12:05.885" endtime="20210506 22:12:05.885"/>
+</kw>
+<kw name="Then Submit Credentials" library="commom.resource">
+<status status="NOT RUN" starttime="20210506 22:12:05.886" endtime="20210506 22:12:05.886"/>
+</kw>
+<kw name="Close Browser" library="commom.resource" type="TEARDOWN">
+<kw name="Close Browser" library="commom.resource">
+<kw name="Close Browser" library="commom.resource">
+<kw name="Close Browser" library="commom.resource">
+<kw name="Close Browser" library="commom.resource">
+<kw name="Close Browser" library="commom.resource">
+<kw name="Close Browser" library="commom.resource">
+<kw name="Close Browser" library="commom.resource">
+<kw name="Close Browser" library="commom.resource">
+<kw name="Close Browser" library="commom.resource">
+<kw name="Close Browser" library="commom.resource">
+<kw name="Close Browser" library="commom.resource">
+<kw name="Close Browser" library="commom.resource">
+<kw name="Close Browser" library="commom.resource">
+<kw name="Close Browser" library="commom.resource">
+<kw name="Close Browser" library="commom.resource">
+<kw name="Close Browser" library="commom.resource">
+<kw name="Close Browser" library="commom.resource">
+<kw name="Close Browser" library="commom.resource">
+<kw name="Close Browser" library="commom.resource">
+<kw name="Close Browser" library="commom.resource">
+<kw name="Close Browser" library="commom.resource">
+<kw name="Close Browser" library="commom.resource">
+<kw name="Close Browser" library="commom.resource">
+<kw name="Close Browser" library="commom.resource">
+<kw name="Close Browser" library="commom.resource">
+<kw name="Close Browser" library="commom.resource">
+<kw name="Close Browser" library="commom.resource">
+<kw name="Close Browser" library="commom.resource">
+<kw name="Close Browser" library="commom.resource">
+<kw name="Close Browser" library="commom.resource">
+<kw name="Close Browser" library="commom.resource">
+<kw name="Close Browser" library="commom.resource">
+<kw name="Close Browser" library="commom.resource">
+<kw name="Close Browser" library="commom.resource">
+<kw name="Close Browser" library="commom.resource">
+<kw name="Close Browser" library="commom.resource">
+<kw name="Close Browser" library="commom.resource">
+<kw name="Close Browser" library="commom.resource">
+<kw name="Close Browser" library="commom.resource">
+<kw name="Close Browser" library="commom.resource">
+<kw name="Close Browser" library="commom.resource">
+<msg timestamp="20210506 22:12:05.909" level="FAIL">Maximum limit of started keywords exceeded.</msg>
+<status status="FAIL" starttime="20210506 22:12:05.908" endtime="20210506 22:12:05.909"/>
+</kw>
+<status status="FAIL" starttime="20210506 22:12:05.908" endtime="20210506 22:12:05.909"/>
+</kw>
+<status status="FAIL" starttime="20210506 22:12:05.908" endtime="20210506 22:12:05.909"/>
+</kw>
+<status status="FAIL" starttime="20210506 22:12:05.907" endtime="20210506 22:12:05.909"/>
+</kw>
+<status status="FAIL" starttime="20210506 22:12:05.907" endtime="20210506 22:12:05.909"/>
+</kw>
+<status status="FAIL" starttime="20210506 22:12:05.907" endtime="20210506 22:12:05.910"/>
+</kw>
+<status status="FAIL" starttime="20210506 22:12:05.906" endtime="20210506 22:12:05.910"/>
+</kw>
+<status status="FAIL" starttime="20210506 22:12:05.906" endtime="20210506 22:12:05.910"/>
+</kw>
+<status status="FAIL" starttime="20210506 22:12:05.906" endtime="20210506 22:12:05.910"/>
+</kw>
+<status status="FAIL" starttime="20210506 22:12:05.905" endtime="20210506 22:12:05.910"/>
+</kw>
+<status status="FAIL" starttime="20210506 22:12:05.905" endtime="20210506 22:12:05.910"/>
+</kw>
+<status status="FAIL" starttime="20210506 22:12:05.905" endtime="20210506 22:12:05.910"/>
+</kw>
+<status status="FAIL" starttime="20210506 22:12:05.904" endtime="20210506 22:12:05.911"/>
+</kw>
+<status status="FAIL" starttime="20210506 22:12:05.904" endtime="20210506 22:12:05.911"/>
+</kw>
+<status status="FAIL" starttime="20210506 22:12:05.904" endtime="20210506 22:12:05.911"/>
+</kw>
+<status status="FAIL" starttime="20210506 22:12:05.903" endtime="20210506 22:12:05.911"/>
+</kw>
+<status status="FAIL" starttime="20210506 22:12:05.903" endtime="20210506 22:12:05.911"/>
+</kw>
+<status status="FAIL" starttime="20210506 22:12:05.903" endtime="20210506 22:12:05.911"/>
+</kw>
+<status status="FAIL" starttime="20210506 22:12:05.902" endtime="20210506 22:12:05.911"/>
+</kw>
+<status status="FAIL" starttime="20210506 22:12:05.902" endtime="20210506 22:12:05.912"/>
+</kw>
+<status status="FAIL" starttime="20210506 22:12:05.902" endtime="20210506 22:12:05.912"/>
+</kw>
+<status status="FAIL" starttime="20210506 22:12:05.901" endtime="20210506 22:12:05.912"/>
+</kw>
+<status status="FAIL" starttime="20210506 22:12:05.900" endtime="20210506 22:12:05.912"/>
+</kw>
+<status status="FAIL" starttime="20210506 22:12:05.900" endtime="20210506 22:12:05.912"/>
+</kw>
+<status status="FAIL" starttime="20210506 22:12:05.899" endtime="20210506 22:12:05.912"/>
+</kw>
+<status status="FAIL" starttime="20210506 22:12:05.899" endtime="20210506 22:12:05.913"/>
+</kw>
+<status status="FAIL" starttime="20210506 22:12:05.899" endtime="20210506 22:12:05.913"/>
+</kw>
+<status status="FAIL" starttime="20210506 22:12:05.898" endtime="20210506 22:12:05.913"/>
+</kw>
+<status status="FAIL" starttime="20210506 22:12:05.898" endtime="20210506 22:12:05.913"/>
+</kw>
+<status status="FAIL" starttime="20210506 22:12:05.897" endtime="20210506 22:12:05.913"/>
+</kw>
+<status status="FAIL" starttime="20210506 22:12:05.897" endtime="20210506 22:12:05.913"/>
+</kw>
+<status status="FAIL" starttime="20210506 22:12:05.895" endtime="20210506 22:12:05.913"/>
+</kw>
+<status status="FAIL" starttime="20210506 22:12:05.895" endtime="20210506 22:12:05.914"/>
+</kw>
+<status status="FAIL" starttime="20210506 22:12:05.894" endtime="20210506 22:12:05.914"/>
+</kw>
+<status status="FAIL" starttime="20210506 22:12:05.893" endtime="20210506 22:12:05.914"/>
+</kw>
+<status status="FAIL" starttime="20210506 22:12:05.893" endtime="20210506 22:12:05.914"/>
+</kw>
+<status status="FAIL" starttime="20210506 22:12:05.891" endtime="20210506 22:12:05.914"/>
+</kw>
+<status status="FAIL" starttime="20210506 22:12:05.890" endtime="20210506 22:12:05.914"/>
+</kw>
+<status status="FAIL" starttime="20210506 22:12:05.889" endtime="20210506 22:12:05.915"/>
+</kw>
+<status status="FAIL" starttime="20210506 22:12:05.889" endtime="20210506 22:12:05.915"/>
+</kw>
+<status status="FAIL" starttime="20210506 22:12:05.888" endtime="20210506 22:12:05.915"/>
+</kw>
+<status status="FAIL" starttime="20210506 22:12:05.887" endtime="20210506 22:12:05.915">Maximum limit of started keywords exceeded.</status>
+</kw>
+<status status="FAIL" starttime="20210506 22:12:05.860" endtime="20210506 22:12:05.915">No browser is open.
+
+Also teardown failed:
+Maximum limit of started keywords exceeded.</status>
+</test>
+<test id="s1-t2" name="Scenario: Sellect all T-shirts">
+<kw name="Given I'm on Home Page">
+<msg timestamp="20210506 22:12:05.920" level="FAIL">No keyword with name 'Given I'm on Home Page' found.</msg>
+<status status="FAIL" starttime="20210506 22:12:05.920" endtime="20210506 22:12:05.920"/>
+</kw>
+<kw name="And I selected products">
+<arg>${t-shirts}</arg>
+<status status="NOT RUN" starttime="20210506 22:12:05.924" endtime="20210506 22:12:05.924"/>
+</kw>
+<kw name="When I click on Cart">
+<status status="NOT RUN" starttime="20210506 22:12:05.928" endtime="20210506 22:12:05.928"/>
+</kw>
+<kw name="Then All T-shirts have been added to the cart">
+<status status="NOT RUN" starttime="20210506 22:12:05.932" endtime="20210506 22:12:05.932"/>
+</kw>
+<status status="FAIL" starttime="20210506 22:12:05.916" endtime="20210506 22:12:05.932">No keyword with name 'Given I'm on Home Page' found.</status>
+</test>
+<test id="s1-t3" name="Scenario: Buy all T-shirts">
+<kw name="Given That I'm on the Cart Page">
+<msg timestamp="20210506 22:12:05.937" level="FAIL">No keyword with name 'Given That I'm on the Cart Page' found.</msg>
+<status status="FAIL" starttime="20210506 22:12:05.937" endtime="20210506 22:12:05.937"/>
+</kw>
+<kw name="When Check all products">
+<status status="NOT RUN" starttime="20210506 22:12:05.941" endtime="20210506 22:12:05.941"/>
+</kw>
+<kw name="And I click on &quot;Checkout&quot; Button">
+<status status="NOT RUN" starttime="20210506 22:12:05.944" endtime="20210506 22:12:05.944"/>
+</kw>
+<kw name="Then I fill my information and finished of the order">
+<status status="NOT RUN" starttime="20210506 22:12:05.947" endtime="20210506 22:12:05.948"/>
+</kw>
+<status status="FAIL" starttime="20210506 22:12:05.933" endtime="20210506 22:12:05.948">No keyword with name 'Given That I'm on the Cart Page' found.</status>
+</test>
+<test id="s1-t4" name="Scenario: Sort products on the home page">
+<kw name="Given I'm on the Home Page">
+<msg timestamp="20210506 22:12:05.954" level="FAIL">No keyword with name 'Given I'm on the Home Page' found.</msg>
+<status status="FAIL" starttime="20210506 22:12:05.954" endtime="20210506 22:12:05.954"/>
+</kw>
+<kw name="When I select products">
+<arg>${all-products}</arg>
+<status status="NOT RUN" starttime="20210506 22:12:05.958" endtime="20210506 22:12:05.958"/>
+</kw>
+<kw name="And I sort the products">
+<status status="NOT RUN" starttime="20210506 22:12:05.961" endtime="20210506 22:12:05.961"/>
+</kw>
+<kw name="Then The products are ordered from A-Z">
+<status status="NOT RUN" starttime="20210506 22:12:05.964" endtime="20210506 22:12:05.964"/>
+</kw>
+<status status="FAIL" starttime="20210506 22:12:05.949" endtime="20210506 22:12:05.965">No keyword with name 'Given I'm on the Home Page' found.</status>
+</test>
+<status status="FAIL" starttime="20210506 22:12:05.751" endtime="20210506 22:12:05.966"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="4" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="4" skip="0" id="s1" name="Product">Product</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
